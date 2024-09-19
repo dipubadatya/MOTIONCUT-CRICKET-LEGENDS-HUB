@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <a href="/players">
+                    <h1>logo</h1>
+                </a>
+                <a href="/players">cricketers</a><a href="/blogs">Blog</a><a href="#">contact</a>
+            </nav>
+            <div id="pg1-hero">
+                <h1 style="font-size: 3vw; color: cornsilk;">"Cricket is a battle of mind and body"</h1>
+                <!-- <div id="pg1-left">
+                    <h1>heloe</h1>
+                </div> -->
+            </div>
+        </div>
+        <div id="page2">
+            <div class="logo-card">
+                <img src="https://i.pinimg.com/736x/37/70/2b/37702b3bb77b4e25d2f5112ad82168c5.jpg" alt="">
+            </div>
+            <div class="logo-card">
+                <img src="https://thumbs.dreamstime.com/b/logo-icc-mens-cricket-world-cup-india-vector-illustration-icc-mens-cricket-world-cup-india-275102427.jpg"
+                    alt="">
+            </div>
+            <div class="logo-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/009/838/950/non_2x/abstract-cricket-world-cup-and-premier-league-logo-or-poster-design-vector.jpg"
+                    alt="">
+            </div>
+            <div class="logo-card">
+                <img src="https://upload.wikimedia.org/wikipedia/hi/7/79/2017_ICC_Champions_Trophy_official_logo.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div id="page3">
+            <div id="pg3-titles">legends</div>
+            <div id="pg3-hero">
+                <div id="pg3-cards">
+                    <%for(let players of allPlayers){%>
+
+                        <a href="/players/<%=players._id%>">
+
+                            <div class="pg3-card">
+                                <div class="pg3-img">
+                                    <img src="<%=players.imageUrl%>" alt="">
+                                </div>
+                                <div class="pg3-titl">
+                                    <h1>
+                                        <%=players.name%>
+                                    </h1>
+                                    <p>batsman</p>
+                                </div>
+                                <div class="scor">
+                                    <h2>
+                                        <%=players.jerseyNumber%>
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <%}%>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="page4">
+            <div id="pg4-title">
+                <h1>best moments</h1>
+            </div>
+            <div id="pg4-hero">
+                <div id="pg4-imgs">
+                    <div class="pg4-img-lft">
+                        <img src="https://ss-i.thgim.com/public/incoming/d1n6pc/article68349826.ece/alternates/PORTRAIT_1200/image.jpeg"
+                            alt="">
+                    </div>
+
+                    <div class="pg4-img-rgt">
+                        <div class="pg4-rgt-top-img">
+                            <div class="pg4-img">
+                                <img src="https://etvbharatimages.akamaized.net/etvbharat/prod-images/30-06-2024/448-252-21825239-thumbnail-16x9-india.gif"
+                                    alt="">
+                            </div>
+                            <div class="pg4-img">
+                                <img src="https://c.ndtvimg.com/2024-07/snujg7h_rohit-sharma-afp_625x300_01_July_24.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="pg4-rgt-btm-img">
+                            <div class="pg4-img">
+                                <img src="https://static.tnn.in/thumb/msid-111366420,thumbsize-53040,width-1280,height-720,resizemode-75/111366420.jpg?quality=100"
+                                    alt="">
+                            </div>
+                            <div class="pg4-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7rC9Lpt60pkQg1ZCPHpkWWnCH-E9JjBXNk4aKSW2jHq8UL9Al2VB6SkjnkHKpvQwHHWY&usqp=CAU"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page5">
+            <div id="pg5-title">
+                <h1>highligts</h1>
+            </div>
+            <div id="pg5-hero">
+
+                <div class="highlits-card">
+                    <div class="pg5-video">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/WQdqgrWvy6g?si=sTIND0va_pmpnLyW"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="pg5-vid-disc">
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+
+                <div class="highlits-card">
+                    <div class="pg5-video">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/3yiWqnKl7lQ?si=bTBPKz_r-2czNG_p"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="pg5-vid-disc">
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+
+                <div class="highlits-card">
+                    <div class="pg5-video">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/rpPCjyVfQOo?si=Fx37IBZqXbctZsS7"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="pg5-vid-disc">
+                        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+        <div id="page6">
+
+            <div id="pg6-left">
+                <div id="pg6-lft-hero">
+                    <div id="pg6-lft-top">
+                        <h1>best player</h1>
+                        <p>Lorem ipsum dolor sit amet </p>
+                    </div>
+
+                    <div id="pg6-lft-btm">
+                        <h1>rohit sherma</h1>
+                        <div class="pg6-txt">
+                            <p>country </p>
+                            <h6>india</h6>
+                        </div>
+
+                        <div class="pg6-txt">
+                            <p>team </p>
+                            <h6>india</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="pg6-mid">
+                <div id="pg6-mid-img">
+                    <img src="https://i.pinimg.com/564x/8b/4e/a1/8b4ea19cf78c59111b7fa81c72cbf5b7.jpg" alt="">
+                </div>
+            </div>
+            <div id="pg6-right">
+                <div id="pg6-rgt-hero">
+
+                </div>
+            </div>
+        </div>
+        <div id="page7">
+            <div id="player-map"></div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="/js/script.js"></script>
+<!-- <script src="/js/map.js"></script> -->
+
+</html>

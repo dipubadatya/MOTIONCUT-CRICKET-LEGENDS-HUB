@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <a href="/players">
+                    <h1>logo</h1>
+                </a>
+                <a href="/players">cricketers</a><a href="#">Blog</a><a href="#">contact</a>
+            </nav>
+            <div id="pg1-hero">
+                <div id="title">
+                    <h1>ADD YOUR FAVORITE PLAYER STORIES</h1>
+                </div>
+                <div id="pg1-card">
+                    <div id="search-box">
+                        <form action="/blogs" method="post">
+                            <input name="name" type="text" id="input-1" placeholder="your name" required>
+                            <input name="story" type="text" id="input-2" placeholder="your stories" required>
+                            <button>submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page2">
+
+
+            <div id="blog">
+
+                <% for(let blog of storys ){ %>
+                    <div class="blog-info">
+                        <div class="blog">
+                            <div class="name">
+                                <h3>name: <%=blog.name%>
+                                </h3>
+                            </div>
+                            <div class="story">
+                                <h4>
+                                    <%=blog.story%>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="delete">
+                            <form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+                                <button><i class="ri-delete-bin-6-fill"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <%}%>
+
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
