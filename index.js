@@ -30,7 +30,13 @@ async function main(){
  
 }
 
+app.get("/",(req,res)=>{
+res.send("welcome to our website!")
 
+    
+})
+    
+       
 
 app.get("/players", async (req,res)=>{
     const allPlayers= await Players.find({})
