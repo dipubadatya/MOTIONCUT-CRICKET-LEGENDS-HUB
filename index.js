@@ -31,7 +31,7 @@ async function main(){
 }
 
 app.get("/",(req,res)=>{
-res.send("welcome to our website!")
+res.redirect('/players')
 
     
 })
