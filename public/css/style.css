@@ -308,18 +308,24 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
     width: 500px;
     height: 350px;
     background-color: #fff;
+    border-radius: 1vw;
+
+    -webkit-box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
+box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
 }
 
 .pg5-video{
     width: 100%;
-    height: 80%;
+    height: 70%;
 }
 .pg5-vid-disc{
     width: 100%;
-    height: 25%;
+    height: 30%;
     /* background-color: aqua; */
     padding: 2vh;
-    margin-top: 2vh;
+    font-size: 0.7vw;
+    /* margin-top: 2vh; */
 }
 
 
@@ -360,9 +366,9 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
 
  #pg6-lft-top{
     width: 100%;
-    height: 20%;
+    height: 70%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-right: 1vw;
@@ -370,13 +376,13 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
 
  #pg6-lft-btm{
     width: 100%;
-    height: 80%;
+    height: 30%;
     background-color: #fff;
     color: #000;
     display: flex;
     padding-right: 1vw;
-    align-items: end;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 2vw;
     
@@ -417,8 +423,69 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
  #pg6-rgt-hero {
     width: 100%;
     height: 80%;
-    background: #000;
+    /* background: #a10c0c; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
  }
+
+ #pg6-rgt-hero .pg6-scors{
+    width: 80%;
+    height: 10%;
+    background-color: #fff;
+ }
+
+ .pg6-scors .pg6-scors-top{
+    width: 100%;
+    height: 70%;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+
+ .pg6-scors .pg6-scors-btm{
+    width: 100%;
+    height: 20%;
+    background-color: #d4d4d4;
+ }
+
+ .pg6-scors-btm #percentage-1{
+    background-color: red;
+    width: 90%;
+    height: 100%;
+ }
+
+
+ .pg6-scors-btm #percentage-2{
+    background-color: red;
+    width: 85%;
+    height: 100%;
+ }
+
+ .pg6-scors-btm #percentage-3{
+    background-color: red;
+    width: 90%;
+    height: 100%;
+ }
+
+ .pg6-scors-btm #percentage-4{
+    background-color: red;
+    width: 75%;
+    height: 100%;
+ }
+
+ .pg6-scors-btm #percentage-5{
+    background-color: red;
+    width: 80%;
+    height: 100%;
+ }
+
+
+
 
  #page7{
     width: 100%;
@@ -435,16 +502,183 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
 
 @media only screen and (max-width:425px) {
   
+
+    #page1{
+        width: 100%;
+        height: 40vh;
+        background-image: url(https://images.unsplash.com/photo-1562077772-3bd90403f7f0?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-position: center;
+        background-size: cover;
+        background-color: blue;
+    }
+    
+    /* #page1 #pg1-left{
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        
+    } */
+    
+    
+    #pg1-hero{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #page1 nav{
+        width: 100%;
+        height: 20%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;
+    }
+    
+    nav a{
+        color: black;
+        
+    }
+    
+    #page2{
+        width: 100%;
+        height: 20vh;
+        /* background-color: #000; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+    
+    #page2 .logo-card{
+        width: 90px;
+        height: 90px;
+        background-color: #fff;
+    }
+    .logo-card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #page3{
+        width: 100%;
+        height: fit-content;
+        /* height: 90%; */
+        margin-top: 2vw;
+        background-color: white;
+    }
+    
+    #page3 #pg3-titles{
+        width: 100%;
+        height: 10%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6vw;
+    }
+    
+    #page3 #pg3-hero{
+        width: 100%;
+        min-height: 90%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #pg3-hero #pg3-cards{
+        width: 90%;
+        min-height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3vw;
+        padding: 4vw;
+    }
+    
+    #pg3-cards .pg3-card{
+        width: 300px;
+        height: 350px;
+        /* background-color: #000; */
+        position: relative;
+        border-radius: 10px;
+    /* 
+        -webkit-box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48);
+    -moz-box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48);
+    box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
+    }
+    
+    .pg3-card .pg3-img{
+        width: 100%;
+        height: 70%;
+        background-color: #fff;
+        border-radius: 10px;
+    
+    }
+    
+    .pg3-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    
+    }
+    
+    .pg3-card .pg3-titl{
+        width: 100%;
+        height: 30%;
+        /* background: #d1b2b2; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    
+    
+    
+    .pg3-titl h1{
+        font-size: 3.5vw;
+        color: black;
+    }
+    
+    .pg3-titl p{
+        font-size: 3vw;
+        color: black;
+    }
+    
+
+    .pg3-card .scor{
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 132, 0);
+        position: absolute;
+        top: 63%;
+        left: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 #page4{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     /* background-color: cadetblue; */
 }
 
 #pg4-title{
     width: 100%;
     height: 10%;
-    font-size: 2vw;
+    font-size: 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -532,10 +766,11 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
     object-position: center;
 }
 
+
 #page5{
-    /* margin-top: 3vw; */
+    margin-top: 3vw;
     width: 100%;
-    height: 100%;
+    height: 135vh;
     /* background: #000; */
 }
 
@@ -549,36 +784,42 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
 }
 
 #pg5-title h1{
-    font-size: 3vw;
+    font-size: 6vw;
 }
 
 #page5 #pg5-hero{
     width: 100%;
-    height: fit-content;
+    height: 90%;
     /* background: #a66868; */
     display: flex;
     align-items: center;
     justify-content: center; 
-    /* flex-wrap: wrap; */
-    padding: 1vw;
-    gap: 1vw;
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 
 .highlits-card{
-    width: 90%;
-    height: 55%;
-    /* background-color: #421313; */
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 1vw;
+
+    -webkit-box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
+box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
 }
 
 .pg5-video{
     width: 100%;
-    height: 80%;
- 
+    height: 70%;
 }
 .pg5-vid-disc{
     width: 100%;
-    height: 25%;
-    padding: 0.5VW;
+    height: 30%;
+    /* background-color: aqua; */
+    padding: 2vh;
+    font-size: 2.5vw;
+    /* margin-top: 2vh; */
 }
 
 
@@ -590,20 +831,22 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
 
 #page6{
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    height: 130vh;
+    /* background-color: red; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 #pg6-left{
-   background-color: #fff;
-    width:20%;
+   /* background-color: #820404; */
+    width:100%;
     height: 70%;
     display: flex;
-     align-items: end;
-     justify-content: end;
+    flex-direction: column;
+     align-items: center;
+     justify-content: center;
      color: rgb(0, 0, 0);
 
 }
@@ -611,7 +854,7 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
 #pg6-lft-hero {
     width: 100%;
     height: 50%;
-    /* background: #000; */
+    /* background: #da6969; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -620,32 +863,38 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
 
  #pg6-lft-top{
     width: 100%;
-    height: 20%;
+    height: 80%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-right: 1vw;
+    padding: 2.5vw;
+ }
+
+ 
+ #pg6-lft-top p{
+    font-size: 3vw;
+    margin-top: 2vw;
  }
 
  #pg6-lft-btm{
     width: 100%;
-    height: 80%;
-    background-color: #fff;
+    height: 40%;
+    margin-top: 3vw;
     color: #000;
     display: flex;
     padding-right: 1vw;
-    align-items: end;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 2vw;
+    gap: 3vw;
     
  }
 
 #pg6-mid{
-    background-color: #d9ff00;
-     width:33%;
-     height: 70%;
+    /* background-color: #d9ff00; */
+     width:100%;
+     height: 30%;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -664,9 +913,9 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
  }
 
  #pg6-right{
-    /* background-color: #0940d7; */
-     width:20%;
-     height: 70%;
+    /* background-color: #00f329; */
+     width:100%;
+     height: 40%;
      display: flex;
      align-items: end;
      justify-content: center;
@@ -677,9 +926,12 @@ box-shadow: -9px 18px 32px -21px rgba(0,0,0,0.48); */
  #pg6-rgt-hero {
     width: 100%;
     height: 80%;
-    background: #000;
+    /* background: #cf0909; */
  }
 
-
+#page7{
+    height: 30vh;
+    padding: 2vw;
+}
 
 }
