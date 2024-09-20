@@ -27,11 +27,16 @@ main().then(()=>{
 
 async function main(){
    await mongoose.connect(process.env.MONGO_ATLAS)
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//    })
  
 }
 
 
-
+app.get("/",(req,res)=>{
+    res.redirect('/players')
+})
 app.get("/players", async (req,res)=>{
     const allPlayers= await Players.find({})
     res.render("players.ejs",{allPlayers})
@@ -81,6 +86,6 @@ app.delete("/blogs/:id", async(req,res)=>{
 
 
 app.listen(3000,()=>{
-     console.log("app connect on port 3000")
+   console.log("server listening on port :3000 ")
 })
 
