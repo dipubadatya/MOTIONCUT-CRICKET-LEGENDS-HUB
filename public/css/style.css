@@ -540,7 +540,6 @@ box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
     
     nav a{
         color: black;
-
         font-size: 3vw;
     
         
@@ -555,10 +554,6 @@ box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
     }
     
     
-
-        
-    }
-
     
     #page2{
         width: 100%;
@@ -950,9 +945,4 @@ box-shadow: -10px 10px 27px -8px rgba(0,0,0,0.75);
     height: 30vh;
     padding: 2vw;
 }
-
-
 }
-
-}
-
