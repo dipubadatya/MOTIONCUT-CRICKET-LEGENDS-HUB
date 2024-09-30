@@ -26,17 +26,27 @@ main().then(()=>{
 
 
 async function main(){
-   await mongoose.connect(process.env.MONGO_ATLAS)
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//    })
+   await mongoose.connect(process.env.MONGO_LOCAL,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
  
 }
+
+app.get("/",(req,res)=>{
+res.redirect('/players')
 
 
 app.get("/",(req,res)=>{
     res.redirect('/players')
 })
+
+    
+})
+    
+       
+
+
 app.get("/players", async (req,res)=>{
     const allPlayers= await Players.find({})
     res.render("players.ejs",{allPlayers})
@@ -80,7 +90,30 @@ app.delete("/blogs/:id", async(req,res)=>{
 
 
 
+app.get('/blogs/:id/edit', async (req,res)=>{
+    let {id}=req.params
+    let story=await Story.findById(id)
+    console.log(story)
+    res.render('edit.ejs',{story})
+})
 
+app.put('/blogs/:id', async(req,res)=>{
+    let{id}=req.params
+    console.log(id)
+    const {name,story}=req.body
+ 
+
+    let newBlog=await Story.findByIdAndUpdate(id,{name,story})
+    await newBlog.save()
+    res.redirect("/blogs")
+})
+
+
+
+
+app.use('*',(req,res,next)=>{
+       next()
+})
  
 
 

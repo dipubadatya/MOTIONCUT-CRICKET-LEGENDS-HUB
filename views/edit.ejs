@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRICKET-HUB</title>
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+<body>
+
+    <div id="page1">
+        <nav>
+            <a href="/players">
+                <h1>🏏LEGEND-HUB</h1>
+            </a>
+            <a href="/players">cricketers</a><a href="/blogs">Blog</a><a href="#">contact</a>
+        </nav>
+        <div id="pg1-hero">
+            <div id="title">
+                <h1>Edit your Story</h1>
+            </div>
+            <div id="pg1-card">
+                <div id="search-box">
+                    <form action="/blogs/<%=story.id%>?_method=PUT" method="post">
+                        <input name="name" type="text" id="input-1"  value="<%=story.name%>" placeholder="your name" required>
+                        <input name="story" type="text" id="input-2" value="<%=story.story%>"  placeholder="your stories" required>
+                        <button>SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+          
+        </div>
+    </div>
+ 
+</body>
+</html>

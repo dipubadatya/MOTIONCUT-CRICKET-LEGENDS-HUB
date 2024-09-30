@@ -37,6 +37,10 @@ nav a{
     color: black;
     
 }
+nav a h2{
+    display: none;
+    
+}
 
 #pg1-hero{
     width: 100%;
@@ -146,15 +150,15 @@ form{
 #blog{
     width: 80%;
     height: 100%;
-    display: flex;
+    /* display: flex;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     flex-wrap: wrap;
-    
+    margin-left: 26vw;
     /* background-color: #000000; */
     
-    gap: 1.5vw;
+    gap: 2.5vw;
     /* padding: 2vw; */
     /* overflow-y: scroll; */
 
@@ -171,8 +175,29 @@ form{
     flex-wrap: wrap;
     padding: 2vh;
     border-radius: 15px;
+    gap: 2vh;
+   
     
 }
+
+.blog{
+    width: 80%;
+    height: 100%;
+}
+.blog .name{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1vh;
+    /* background-color: aqua; */
+}
+.blog .story{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    /* overflow-x: scroll; */
+
+}
+
 
 
 
@@ -185,6 +210,18 @@ button{
     border: none;
 }
 
+.delete-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    /* background-color: #000000; */
+}
+
+.delete-add button i{
+    font-size: 1vw;
+}
 /* Customize the scrollbar for WebKit browsers (Chrome, Safari) */
 /* #blog::-webkit-scrollbar {
     width: 5px;
@@ -223,6 +260,14 @@ button{
 
 nav a{
     color: black;
+    font-size: 3vw;
+}
+nav a:nth-child(4){
+    display: none;
+     
+ }
+nav a h1{
+    font-size: 3.5vw;
     
 }
 
@@ -347,39 +392,88 @@ form{
 
 #blog{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    /* display: flex;
     display: flex;
-   
+    align-items: center;
+    justify-content: center; */
     flex-wrap: wrap;
+    margin-left: 1vw;
     /* background-color: #000000; */
     
-    /* gap: 1.5vw; */
-    padding: 2vw;
+    gap: 2.5vw;
+    /* padding: 2vw; */
     /* overflow-y: scroll; */
 
 }
 .blog-info{
     width: 100%;
-    height: 10%;
+    height: 15%;
     background-color: #ececec;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* color: white; */
+    margin-top: 3vh;
     flex-wrap: wrap;
+    padding: 2vh;
+    border-radius: 15px;
+    gap: 2vh;
+   
     
-    
+}
+
+.blog{
+    width: 80%;
+    height: 100%;
+}
+.blog .name{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0.5vh;
+    /* background-color: aqua; */
+}
+.blog .story{
+    width: 100%;
+    height: 50%;
+    /* background-color: aqua; */
+    /* overflow-x: scroll; */
+
 }
 
 
 
+
 button i{
-    font-size: 3.2vw;
+    font-size: 1.2vw;
 }
 
 button{
     outline: none;
     border: none;
 }
+
+.delete-add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    /* background-color: #000000; */
+}
+
+.delete-add button i{
+    font-size: 3vw;
+}
+
+/* button i{
+    font-size: 3.2vw;
+}
+
+button{
+    outline: none;
+    border: none;
+} */
 
   }
   

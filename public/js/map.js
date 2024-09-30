@@ -1,11 +1,6 @@
 
 let cordinate=[
-    {
-        name:"virat kohli",
-        country:"india",
-        lat:28.644800,
-        lon:77.216721
-      },
+
          {
         name:"sachin tendulkar",
         country:"india",
@@ -35,6 +30,13 @@ let cordinate=[
         lon:85.296013
       },
       {
+        name:"virat kohli",
+        country:"india",
+
+        lat:28.644800,
+        lon:77.216721
+      },
+      {
         name:"sir don bradman",
         country:"australia",
 
@@ -59,15 +61,15 @@ let cordinate=[
         name:"Murlitharan",
         country:"Sri Lanka",
 
-        lat:28.644800,
-        lon:77.216721
+        lat:7.291418,
+        lon:80.636696,
       },
       {
         name:"Wasim Akram",
         country:"Pakistan",
 
-        lat:28.644800,
-        lon:77.216721
+        lat:31.582045,
+        lon:74.329376,
       }
 ]
 
@@ -75,7 +77,8 @@ let cordinate=[
 let map;
 
 function initMap() {
-    map = L.map('player-map').setView([0, 0], 2);
+
+    map = L.map('#player-map').setView([0, 0], 2);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);

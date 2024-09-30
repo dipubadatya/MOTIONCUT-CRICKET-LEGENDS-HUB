@@ -44,12 +44,13 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 #pg1-main-card{
     width: 80%;
     height: 80%;
-    /* background-color: #fff; */
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,12 +97,13 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 #card-tgt-top-left{
     width: 45%;
     height: 90%;
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     padding-left: 1vw;
+    padding-right: 1vw;
 
     -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
@@ -111,12 +113,13 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 #card-tgt-top-right{
     width: 45%;
     height: 90%;
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     padding-left: 1vw;
+    padding-right: 1vw;
 
     -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
@@ -141,7 +144,7 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     align-items: start;
     justify-content: center;
     padding-left: 1vw;
-
+    gap: 1.5vh;
     -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
@@ -155,8 +158,11 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 
 
 #pg1-m-crd-rgt-top h2{
-    font-size: 1.2vw;
-    color: #403f3f;
+    width: 100%;
+    font-size: 1vw;
+    color: #000000;
+    padding: 1vh;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -195,6 +201,7 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 5vh;
       
     }
     
@@ -292,8 +299,8 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     }
     
     #card-tgt-btm-left{
-        width: 95%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         /* background-color: #ff0000; */
         display: flex;
         flex-direction: column;
@@ -301,6 +308,7 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
         justify-content: center;
         padding-left: 1vw;
         font-size: 4vw;
+        margin-top: 4vh;
     
         -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
@@ -308,7 +316,8 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     }
 
    #card-tgt-btm-left h3{
-    font-size: 4vw;
+    font-size: 3vw;
+    margin-bottom: 2vh;
    }
     
     
@@ -321,7 +330,7 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     
     #pg1-m-crd-rgt-top h2{
         font-size: 2.2vw;
-        color: #eab750;
+        color: #000000;
     }
    
 }
