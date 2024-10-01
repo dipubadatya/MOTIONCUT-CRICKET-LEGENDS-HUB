@@ -192,8 +192,22 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
         
     }
 
+    nav a{
+        color: black;
+        font-size: 3vw;
+    }
+    nav a:nth-child(4){
+        display: none;
+         
+     }
+    nav  h1{
+        font-size: 3.5vw;
+        
+    }
+    
+  
+    
 
-   
     
     #pg1-hero{
         width: 100%;
