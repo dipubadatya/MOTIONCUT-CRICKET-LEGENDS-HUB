@@ -137,15 +137,15 @@ let cordinate=[
         name:"Murlitharan",
         country:"Sri Lanka",
 
-        lat:28.644800,
-        lon:77.216721
+       
+        lat:7.291418,
+        lon:80.636696,
       },
       {
         name:"Wasim Akram",
         country:"Pakistan",
-
-        lat:28.644800,
-        lon:77.216721
+        lat:31.582045,
+        lon:74.329376,
       }
 ]
 
