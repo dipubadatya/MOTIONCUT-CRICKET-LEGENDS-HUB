@@ -44,6 +44,7 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
 }
 
@@ -166,6 +167,157 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
 }
 
 
+
+@media (max-width:768px){
+    nav a:nth-child(4){
+        display: none;
+         
+     }
+    nav  h1{
+        font-size: 3.5vw;
+        
+    }
+
+
+    #pg1-hero{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+    
+    }
+    
+    #pg1-main-card{
+        width: 100%;
+        height: 80%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+    
+    #pg1-m-crd-left{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+    
+        -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    ;
+        
+    }
+    
+    #pg1-m-crd-left img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #pg1-m-crd-right{
+        width: 100%;
+        height: 100%;
+        margin-top: 5vh;
+      
+
+        /* background-color: rgb(76, 0, 255); */
+    }
+    
+    #pg1-m-crd-rgt-top{
+        width: 100%;
+        height: 80%;
+        /* background-color: #8707fe; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #card-tgt-top-left{
+        width: 45%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    
+        -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    }
+    
+    #card-tgt-top-right{
+        width: 45%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    
+        -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    
+    }
+    
+    #pg1-m-crd-rgt-btm{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2vh;
+    }
+    
+    #card-tgt-btm-left{
+        width: 95%;
+        height: 90%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding-left: 1vw;
+        gap: 1.5vh;
+       
+
+        -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
+    }
+    
+    
+    #pg1-main-card span{
+        font-size: 2.1vw;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    #pg1-m-crd-rgt-top h2{
+        width: 100%;
+        font-size: 2vw;
+        color: #000000;
+        padding: 1vh;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    
+
+}
+
 @media only screen and (max-width: 425px) {
 
 
@@ -220,7 +372,7 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     }
     
     #pg1-main-card{
-        width: 80%;
+        width: 100%;
         height: 75%;
         
         /* background-color: #fff; */
@@ -237,7 +389,7 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
         align-items: center;
         justify-content: center;
         /* background-color: red; */
-    
+
         -webkit-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     -moz-box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
     box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
@@ -267,8 +419,8 @@ box-shadow: -2px 14px 27px -5px rgba(0,0,0,0.22);
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        gap: 2vh;
-        margin-top: 2vh;
+        gap: 1vh;
+        margin-top: 1vh;
     }
     
     #card-tgt-top-left{
