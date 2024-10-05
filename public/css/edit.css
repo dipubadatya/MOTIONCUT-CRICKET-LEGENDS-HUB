@@ -152,6 +152,115 @@ form{
 }
 
 
+
+
+
+@media (max-width:768px){
+    #title {
+        width: 100%;
+        height: 30%;
+        /* background-color: black; */
+        color: rgb(255, 255, 255);
+        /* margin-top: 10%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #title h1 {
+        font-size: 4vw;
+    }
+
+    
+    nav a:nth-child(4) {
+        display: none;
+
+    }
+
+    nav a h1 {
+        font-size: 3.5vw;
+
+    }
+ 
+    #search-box {
+        width: 600px;
+        height: 450px;
+        /* background-color: #e1e1e1; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6vh;
+        padding: 2vw;
+    }
+
+
+    #search-box #input-1 {
+        width: 100%;
+        height: 25%;
+        border: none;
+        outline: none;
+        padding: 1vw;
+        font-size: 2.5vw;
+        border-radius: 2vw;
+        -webkit-box-shadow: -8px 17px 52px -14px rgba(0, 0, 0, 0.74);
+        -moz-box-shadow: -8px 17px 52px -14px rgba(0, 0, 0, 0.74);
+        box-shadow: -8px 17px 52px -14px rgba(0, 0, 0, 0.74);
+    }
+
+
+    #search-box #input-2 {
+        width: 100%;
+        height: 100%;
+        padding: 1vw;
+        border: none;
+        outline: none;
+        font-size: 2.5vw;
+        border-radius: 2vw;
+        -webkit-box-shadow: 20px 31px 52px -22px rgba(0, 0, 0, 0.65);
+        -moz-box-shadow: 20px 31px 52px -22px rgba(0, 0, 0, 0.65);
+        box-shadow: 20px 31px 52px -22px rgba(0, 0, 0, 0.65);
+
+    }
+
+    #input-1::placeholder {
+        padding: 2vw;
+        font-size: 2vw;
+    }
+
+    #input-2::placeholder {
+        padding: 2vw;
+        font-size: 2vw;
+    }
+
+    #search-box button {
+        width: 200px;
+        height: 90px;
+        font-size: 3vw;
+        border: none;
+        outline: none;
+        background-color: #d69b1b;
+        color: #000000;
+
+        border-radius: 2vw;
+        margin-bottom: 2vh;
+
+
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        /* background-color: #000000; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6vh;
+    }
+
+
+}
+
 @media only screen and (max-width: 425px) {
     #search-box button{
         width: 200px;
@@ -189,27 +298,3 @@ form{
 }
 
 
-@media only screen and (max-width: 768px) {
-    #search-box button{
-        width: 30%;
-        height: 10%;
-        border: none;
-        outline: none;
-       
-     color: #000000;
-        font-size: 3vw;
-        border-radius: 2vw;
-        
-      
-    }
-    #search-box #input-1{
-    font-size: 2vw;
-    }
-    #search-box #input-2{
-        font-size: 2vw;
-            
-        }
-
-  
-    
-}
