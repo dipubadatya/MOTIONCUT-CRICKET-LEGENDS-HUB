@@ -26,12 +26,10 @@ main().then(()=>{
 
 
 async function main(){
-
-  mongoose.connect((process.env.MONGO_ATLAS, { serverSelectionTimeoutMS: 30000 }))
-
-
- 
-}
+   await mongoose.connect(process.env.MONGO_ATLAS,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
 
 app.get("/",(req,res)=>{
 res.redirect('/players')
