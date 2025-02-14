@@ -26,8 +26,10 @@ main().then(()=>{
 
 
 async function main(){
-   await mongoose.connect(process.env.MONGO_ATLAS)
-  
+
+  mongoose.connect((process.env.MONGO_ATLAS, { serverSelectionTimeoutMS: 30000 })
+  .then(() => console.log('MongoDB connected successfully'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
  
 }
