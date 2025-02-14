@@ -30,12 +30,19 @@ async function main(){
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
+ 
+}
 
 app.get("/",(req,res)=>{
 res.redirect('/players')
+
+
+app.get("/",(req,res)=>{
+    res.redirect('/players')
 })
 
-
+    
+})
     
        
 
