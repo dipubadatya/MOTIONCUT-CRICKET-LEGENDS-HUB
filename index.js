@@ -26,10 +26,9 @@ main().then(()=>{
 
 
 async function main(){
-   await mongoose.connect(process.env.MONGO_ATLAS,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+   await mongoose.connect(process.env.MONGO_ATLAS)
+  
+
  
 }
 
