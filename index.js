@@ -27,7 +27,7 @@ main().then(()=>{
 
 async function main(){
 
-  mongoose.connect((process.env.MONGO_ATLAS, { serverSelectionTimeoutMS: 30000 })
+  mongoose.connect((process.env.MONGO_ATLAS, { serverSelectionTimeoutMS: 30000 }))
 
 
  
