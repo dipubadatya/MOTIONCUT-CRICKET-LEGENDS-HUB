@@ -33,14 +33,9 @@ async function main(){
 
 app.get("/",(req,res)=>{
 res.redirect('/players')
-
-
-app.get("/",(req,res)=>{
-    res.redirect('/players')
 })
 
-    
-})
+
     
        
 
